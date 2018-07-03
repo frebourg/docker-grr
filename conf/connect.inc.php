@@ -2,15 +2,15 @@
 # Les quatre lignes suivantes sont à modifier selon votre configuration
 # ligne suivante : le nom du serveur qui herberge votre base sql.
 # Si c'est le même que celui qui heberge les scripts, mettre "localhost"
-$dbHost="192.168.55.160";
+$dbHost="$DB_HOST";
 # ligne suivante : le nom de votre base sql
-$dbDb="grr";
+$dbDb="$DB_DB";
 # ligne suivante : le nom de l'utilisateur sql qui a les droits sur la base
-$dbUser="grr";
+$dbUser="$DB_USER";
 # ligne suivante : le mot de passe de l'utilisateur sql ci-dessus
-$dbPass="grr";
+$dbPass="$DB_PASS";
 # ligne suivante : préfixe du nom des tables de données
-$table_prefix="";
+$table_prefix="$DB_TABLE_PREFIX";
 # ligne suivante : Port MySQL laissé par défaut
-$dbPort="";
+$dbPort="$DB_PORT";
 ?>
