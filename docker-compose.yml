@@ -6,4 +6,23 @@ services:
   - "80:80"
   environment:
   - ESSAI=toto
+  networks:
+  - grr_db
+ db:
+  image: mysql:5.6
+  restart: always
+  environment:
+   MYSQL_ROOT_PASSWORD: admin
+   MYSQL_DATABASE: grr
+   MYSQL_USER: grr
+   MYSQL_PASSWORD: grr
+  volumes:
+   - ./initdb:/docker/entrypoint-initdb.d
+  networks:
+  - grr_db
 
+volumes:
+  db-data:
+
+networks:
+  grr_db: 
